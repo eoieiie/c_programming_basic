@@ -1,3 +1,6 @@
+//킬로미터로 바꿔주는 프로그램
+
+
 #include <stdio.h>
 
 int main(void)
