@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int cnt = 0;
+    double sum = 0.0, x;
+
+    for (x = 0.0; x <= 9.9; x += 0.1)
+    {
+        sum += x;
+        printf("cnt = %5d\n", ++cnt);
+
+    }
+
+    printf("sum = %f\n", sum);
+
+    return 0;
+} 
+
+//결과 살짝 이상하게 나와도 ㄱㅊ.
