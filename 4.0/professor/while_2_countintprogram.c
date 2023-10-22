@@ -94,6 +94,9 @@ int main(void)
 {
     int blank_cnt = 0, c, digit_cnt = 0,
         letter_cnt = 0, nl_cnt = 0, other_cnt = 0;
+        
+    int total = blank_cnt + digit_cnt + letter_cnt + nl_cnt + other_cnt;
+
     while ((c = getchar()) != EOF) /* braces not necessary */
         if (c == ' ')
             ++blank_cnt;
@@ -109,10 +112,6 @@ int main(void)
     printf("%10s%10s%10s%10s%10s%10s\n", "blanks",
            "digits", "letters", "lines", "others", "total");
     printf("%10d%10d%10d%10d%10d%10d\n",
-           blank_cnt, digit_cnt, letter_cnt, nl_cnt + other_cnt);
+           blank_cnt, digit_cnt, letter_cnt, nl_cnt, other_cnt, total);
     return 0;
 }
-
-
-
-

@@ -38,6 +38,41 @@ int main(void)
         
 }
 
+#include <stdio.h>
+
+int main(void)
+{
+    int n, a, b;
+    int sum1 = 0, sum2 = 0; 
+
+    printf("input integer n: \n");
+    scanf("%d",&n);
+
+    if (n >= 0) 
+    {
+        a = n;
+        while (a <= 2 * n)
+        {
+            sum1 += a;
+            ++a;
+        }
+        printf("the result is %d.", sum1);
+    }
+
+    else
+    {
+        b = 2 * n;
+        while (b <= n)
+        {
+            sum2 += b;
+            ++b;
+        }
+         printf("the result is %d.", sum2);
+     }
+
+     return 0;   
+}
+
 
 //아래 식은 뤼튼이 적은 거 . 
 

@@ -2,7 +2,7 @@
 // (Assume that the values of i and j are not changed in the body of the loop.) 
 
 // printf("Input two integers: ");
-// seanf("%d%d", &i, &j);
+// scanf("%d%d", &i, &j);
 // while (i  * j < 0 && ++ i ! = 7 && j ++ ! = 9)
 // {}
 /* do something */

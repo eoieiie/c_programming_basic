@@ -4,8 +4,10 @@ int main()
 {
     int a = 5, b = 3;
 
-    int result1 = ++a * (b-- - (a - b)); //가장 먼저 실행되는거 b--. ()우선순위는 함수호출의 괄호이다.
-    int result2 = a * b++ - a * b; 
+    int result1 = ++a * (b-- - (a - b)); //가장 먼저 실행되는거 b--. ()우선순위는 함수호출의 괄호이다.b = 2 a = 6
+  
+  
+    int result2 = a * b++ - a * b; //b = 3 a = 6
     // int result2 = -a - - ++b -b;
 
     printf("a : %d\n", a);
@@ -17,3 +19,4 @@ int main()
 
 }
 
+// result1
